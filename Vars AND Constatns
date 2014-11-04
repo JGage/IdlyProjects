@@ -1,0 +1,152 @@
+//
+//  Vars AND Constants.h
+//  Altogether
+//
+//  Created by josh on 10/28/14.
+//  Copyright (c) 2014 GageIT. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+@interface Vars_AND_Constants : NSObject
+
+
+// TEST
+    FOUNDATION_EXPORT       float       varCheck;
+    FOUNDATION_EXPORT const float       CONCheck;
+
+
+// DEVICE
+    + (NSString *) platform;
+    + (NSString *) platformString;
+    // STATUS BAR
+    FOUNDATION_EXPORT const float       CONstatusBarHeight;
+
+
+// ALL
+    FOUNDATION_EXPORT float             varDeviceWidth;
+    FOUNDATION_EXPORT float             varDeviceHeight;
+
+
+// PARSE
+    FOUNDATION_EXPORT const NSString    *CONparseFriend;
+    FOUNDATION_EXPORT const NSString    *CONparseNotFriend;
+    FOUNDATION_EXPORT const NSString    *CONABchanged;
+    FOUNDATION_EXPORT const NSString    *CONABunchanged;
+    FOUNDATION_EXPORT NSMutableDictionary   *parseCurrentFriendsX;
+    FOUNDATION_EXPORT NSMutableDictionary   *parseCurrentFriendsOTGStatus;
+    // GET CURRENT FRIENDS FROM PARSEDB
+    + (void) setParseCurrentFriendsDictX;
+    // GET CURRENT FRIENDS' OUTGOING STATUS FROM PARSEDB
+    + (void) getParseFriendsOTGStatus;
+
+// MAIN VC
+    FOUNDATION_EXPORT NSInteger const   CONMVCTag;
+    // TABS
+    // - dims -
+    FOUNDATION_EXPORT const float       CONtabHeight;
+    FOUNDATION_EXPORT const float       CONtabBorderWidth;
+
+
+// DAY LAYOUT
+    // sections
+    FOUNDATION_EXPORT const float       CONnumberDaySections;
+    FOUNDATION_EXPORT const float       CONdaySectionStartH;
+    FOUNDATION_EXPORT const float       CONdaySectionHeight;
+    // day-text
+    // - dims -
+    FOUNDATION_EXPORT const float       CONdayTextSectionStartX;
+    FOUNDATION_EXPORT const float       CONdayTextSectionH;
+    FOUNDATION_EXPORT const float       CONdayTextSectionW;
+    // - text -
+    FOUNDATION_EXPORT const NSString    *CONdayMessageFont;
+    // day-quad
+    // - dims -
+    FOUNDATION_EXPORT const float       CONbuttonDimW;
+    FOUNDATION_EXPORT const float       CONbuttonDimH;
+    // - position -
+    FOUNDATION_EXPORT const float       CONmornStartX;
+    FOUNDATION_EXPORT const float       CONmornStartY;
+    FOUNDATION_EXPORT const float       CONbuttonSeparatorX;
+    FOUNDATION_EXPORT const float       buttonSeparatorY;
+    // contact-counter
+    // - tag -
+    FOUNDATION_EXPORT const int         CONOTGfriendCounterTag;
+    // - position -
+    FOUNDATION_EXPORT const float       CONcontactsPositionStartY;
+    FOUNDATION_EXPORT const float       CONcontactsPositionStartX;
+    // - dims -
+    FOUNDATION_EXPORT const float       CONcontactsDimH;
+    FOUNDATION_EXPORT const float       CONcontactsDimW;
+
+
+// BASEMENT VIEW
+    // - basement button -
+    FOUNDATION_EXPORT const float       CONbasementButtonWidth;
+    FOUNDATION_EXPORT const float       CONbasementButtonHeight;
+    FOUNDATION_EXPORT const float       CONbasementButtonOffsetX;
+    FOUNDATION_EXPORT const float       CONbasementButtonOffsetY;
+    // - basement cells -
+        FOUNDATION_EXPORT const float   CONbasementCellHeight;
+    FOUNDATION_EXPORT const float       CONbasementCellImageHW;
+    // - basement cleavage -
+    FOUNDATION_EXPORT const float       CONbasementClosedWidth;
+    FOUNDATION_EXPORT const float       CONbasementOpenedWidth;
+    FOUNDATION_EXPORT const NSString    *CONnavyTit;
+    // - opened/closed ststus -
+    FOUNDATION_EXPORT NSString          *varBSC;
+
+
+// CONTACTS
+    // - friend y/n -
+    FOUNDATION_EXPORT NSString *const   CRSyes; // Contact's Status as Accepted RELATIONSHIP or Not
+    FOUNDATION_EXPORT NSString *const   CRSno; // Contact's Status as Accepted RELATIONSHIP or Not
+    // - activated y/n -
+    FOUNDATION_EXPORT NSString *const   CATS; // Contact's Status as Currently ACCEPTING/TRANSMITTING or Not
+    // - counters -
+    FOUNDATION_EXPORT const float       CONcontactCounterDimH;
+    FOUNDATION_EXPORT const float       CONcontactCounterDimW;
+    FOUNDATION_EXPORT const float       CONcontactCounterFontSize;
+    FOUNDATION_EXPORT const NSString    *CONcontactCounterFont;
+    FOUNDATION_EXPORT       NSInteger   varOutgoingCount;
+
+// POPUP
+    // - dims -
+    FOUNDATION_EXPORT NSInteger const   CONpopUpHeight;
+    FOUNDATION_EXPORT NSInteger const   CONpopUpWidth;
+    FOUNDATION_EXPORT float     const   CONpopupBorderRadius;
+    FOUNDATION_EXPORT float     const   CONpopupEdgeCurvature;
+    // - field dims -
+    FOUNDATION_EXPORT NSInteger const   CONpopUpFieldHeight;
+    FOUNDATION_EXPORT NSInteger const   CONpopUpFieldWidth;
+    FOUNDATION_EXPORT NSInteger const   CONpopUpFieldEdgeCurve;
+    FOUNDATION_EXPORT NSInteger const   CONpopUpFieldEdgeThick;
+    // - fade -
+    FOUNDATION_EXPORT NSInteger const   CONfadeTag;
+    FOUNDATION_EXPORT float     const   CONfadeDuration;
+    FOUNDATION_EXPORT float     const   CONfadeAlpha;
+
+
+// ADDRESSBOOK TABLEVIEW POPUP
+    // - tableview dims -
+    FOUNDATION_EXPORT NSInteger const   CONtablePopUpHeight;
+    FOUNDATION_EXPORT NSInteger const   CONtablePopUpWidth;
+    FOUNDATION_EXPORT NSInteger const   CONtablePopUpStartX;
+    FOUNDATION_EXPORT NSInteger const   CONtablePopUpStartY;
+    // - navbar dims -
+    FOUNDATION_EXPORT NSInteger const   CONtablePopUpNavbarHeight;
+    FOUNDATION_EXPORT NSInteger const   CONtablePopUpNavbarIconH;
+    FOUNDATION_EXPORT NSInteger const   CONtablePopUpNavbarIconW;
+    FOUNDATION_EXPORT NSInteger const   CONtablePopUpFriendCounTag;
+    // - toolbar dims -
+    FOUNDATION_EXPORT NSInteger const   CONtablePopUpToolbarHeight; // <- unused so far
+    // - tableview buttons -
+    FOUNDATION_EXPORT NSInteger const   CONtablePopUpButtonHeight;
+    FOUNDATION_EXPORT NSInteger const   CONtablePopUpButtonWidth;
+    FOUNDATION_EXPORT NSInteger const   CONtablePopUpButtonStartX;
+    FOUNDATION_EXPORT NSInteger const   CONtablePopUpButtonStartY;
+
+
+
+@end
