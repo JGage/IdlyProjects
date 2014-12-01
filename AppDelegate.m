@@ -21,8 +21,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 // PARSE CONNECTION KEYS
-    [Parse setApplicationId:@"4sVpHPzR1d3X49ZIujVMSRabi2Ajv1e1DTYZ20a9"
-                  clientKey:@"REPZmsWh7jCivNViM5eFQ2s4WSnFii3w2VH7vrQn"];
+    [Parse setApplicationId:@""
+                  clientKey:@""];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
 // CUSTOM STATUS BAR
